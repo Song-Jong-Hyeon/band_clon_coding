@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2021여름 세종심층 | 밴드</title>
+        <script
+            src="https://kit.fontawesome.com/2d323a629b.js"
+            crossorigin="anonymous"
+        ></script>
+        <script 
+            src="https://fonts.googleapis.com/css?family=Roboto&display=swqp"
+            rel="stylesheet"
+        ></script>
+        <link rel="stylesheet" href="band.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="firstHeader">
+                <div class="homeAndFindBand">
+                    <div class="home">Band</div>
+                    <div class="findBand">
+                        <input type="text" value="밴드, 페이지, 게시글 검색" class="finder"
+                        onfocus="this.value=''" onblur="this.value='밴드, 페이지, 게시글 검색'"/>
+                        <button class="fas fa-search"></button>
+                    </div>
+                </div>
+                <div class="icons">
+                    <button class="newTextFeed">새글 피드</button>
+                    <span>|</span>
+                    <button class="find">찾기</button>
+                    <button class="far fa-bell fa-1x"></button>
+                    <button class="far fa-comment-dots fa-1x"></button>
+                    <button class="fas fa-user-alt fa-1x"></button>
+                </div>
+            </div>
+            <nav class="secondHeader">
+                <button class="secondHeaderElement">게시글</button>
+                <button class="secondHeaderElement">사진첩</button>
+                <button class="secondHeaderElement">일정</button>
+                <button class="secondHeaderElement">첨부</button>
+                <button class="secondHeaderElement">멤버</button>
+            </nav>
+        </header>
+        
+        <!-- MainBody -->
+        <div class="container">
+            <!-- Mainprofile -->
+            <div class="mainProfile">
+                <img src="img/mainProfileImg.PNG" alt="" class="mainImg" width="208" height="157"/>
+                <div class="bandName">2021여름_세종심층</div>
+                <div class="memberControl">
+                    <div class="memberCnt">멤버 12</div>
+                    <span>·</span>
+                    <button class="fas fa-plus-circle">초대</button>
+                </div>
+                <div class="caution">
+                    밴드와 게시글이 공개되지 않습니다.<br/>
+                    초대를 통해서만 가입할 수 있습니다.
+                </div>
+                <hr class="diviveLine"/>
+                <button class="fas fa-cog"><span> 밴드 설정</span></button>
+            </div>
+
+            <!-- makingnewPost -->
+            <div class="postingPage">
+                <div class="findPost">
+                    <input type="text" value="글 내용,#태그,@작성자 검색"
+                     onfocus="this.value=''" onblur="this.value='글 내용,#태그,@작성자 검색'" />
+                    <button class="fas fa-search"></button>
+                </div>
+                <div class="newPost">
+                    <button class="makeNewPost">새로운 소식을 남겨보세요</button>
+                    <div class="icons">
+                        <button class="far fa-image"></button>
+                        <button class="far fa-smile"></button>
+                        <button class="far fa-play-circle"></button>
+                        <button class="fas fa-signal"></button>
+                        <button class="fas fa-paperclip"></button>
+                        <button class="far fa-calendar-alt"></button>
+                        <button class="far fa-list-alt"></button>
+                        <button class="fas fa-vote-yea"></button>
+                        <button class="fas fa-user-check"></button>
+                        <button class="fas fa-file-alt"></button>
+                        <button class="fas fa-clipboard-list "></button>
+                        <button class="fas fa-map-marker-alt"></button>
+                        <button class="fas fa-ellipsis-h"></button>
+                    </div>
+                </div>
+                <div class="postedPages">
+                    <div class="postedPage1">
+                        <div class="mainPost">
+                            <div class="header">
+                                <button class="fas fa-user-alt"></button>
+                                <div class="info">
+                                    <div class="writer">손정교</div>
+                                    <div class="timeRecord">2021년 7월 25일 오후 12:28</div>
+                                </div>
+                                <buuton class="fas fa-ellipsis-v"></button>
+                            </div>
+                            <div class="mainFile"><video src=""></video></div>
+                            <div class="view"><i class="fas fa-eye">1</i></div>
+                        </div>
+                        <hr>
+                        <div class="action">
+                            <button class="far fa-smile"> <span>표정짓기</span></button>
+                            <button class="far fa-comment-dots"> <span>댓글쓰기</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- utils -->
+            <div class="utils">
+                <div class="chatting">
+                    <div class="header">
+                        <div class="utilName">채팅</div>
+                        <div class="utilOption">새 채팅</div>
+                    </div>
+                    <div class="utilToDo">
+                        <button class="fas fa-phone-volume">그룹콜 시작하기</button>
+                        <div class="bandinfo">
+                            <img src="img/mainProfileImg.PNG" alt="" />
+                            <div class="bandName">2021여름_세종심층</div>
+                            <div class="message">밴드 전체 멤버들과 함께하는...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="files">
+                    <div class="header">
+                        <div class="utilName">파일</div>
+                        <div class="utilOption">더보기</div>
+                    </div>
+                    <div class="utilToDo">
+                        <div class="files1">
+                            <button class="fas fa-file-pdf">
+                                <span class="fileName">06-QUIZ(2021).pdf</span>
+                                <div>원글 보기</div>
+                            </button>
+                        </div>
+                        <div class="files2">
+                            <button class="fas fa-file-pdf">
+                                <span class="fileName">07-QUIZ(2021).pdf</span>
+                                <div>원글 보기</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="images">
+                    <div class="header">
+                        <div class="utilName">최근 사진</div>
+                        <div class="utilOption">더보기</div>
+                    </div>
+                    <div class="utilToDo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="band.js"></script>
+    </body>
+</html>

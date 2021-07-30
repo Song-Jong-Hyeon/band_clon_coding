@@ -1,0 +1,252 @@
+:root{
+    /* color */
+    --gray-color : #EEF0F3;
+    --dark-gray-color : #9595B5;
+    --light-gray-color : #DDDFE2;
+    --light-pink-color : #FF5B72;
+    --dark-pink-color : #F0566B;
+    --white-color : #FFF;
+    --black-color : #000;
+    // padding size
+    --padding-size-micro: 4px;
+    --padding-size-small: 8px;
+    --padding-size-mid: 16px;
+    --padding-size-large: 60px;
+    // border and input
+    --border-thick : 1px;
+    --input-width : 240px;
+    // font-size
+    --font-large-size:24px;
+    --font-middle-size:16px;
+    --font-small-size:12px;
+}
+
+*{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button,
+button:focus{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: none;
+    background-color: transparent;
+}
+
+header {
+    .firstHeader{
+        display: flex;
+        background-color: var(--light-pink-color);
+        justify-content: space-around;
+        padding: var(--padding-size-small);
+        .homeAndFindBand{
+            width: 25%;
+            display: flex;
+            justify-content: space-around;
+            .home{
+                border : solid var(--white-color);
+                padding : 0px var(--padding-size-small);
+                border-radius: 20% / 50%;
+                font-size: var(--font-large-size);
+                color : var(--white-color);
+            }
+            .findBand{
+                border : solid var(--border-thick) var(--dark-pink-color);
+                border-radius: 8% / 50%;
+                background-color: var(--dark-pink-color);
+                :focus{outline:none;}
+                .finder{
+                    margin: var(--padding-size-small);
+                    width: var(--input-width);
+                    border:none;
+                    color : var(--light-gray-color);
+                }
+                button{
+                    margin: var(--padding-size-small);
+                    color:var(--light-gray-color);
+                }
+            }
+        }
+        
+        .icons{
+            // padding: var(--padding-size-small);
+            button{
+                color:var(--white-color);
+                padding: var(--padding-size-small);
+            }
+            button:hover{
+                background-color: var(--dark-pink-color);
+            }
+            span{
+                color : var(--dark-pink-color);
+                font-weight: bold;
+            }
+            
+        }
+    }
+    
+    .secondHeader{
+        display: flex;
+        justify-content: center;
+        background-color: var(--dark-pink-color);
+        padding: var(--padding-size-small);
+        .secondHeaderElement{
+            font-size: 15px;
+            color: var(--gray-color);
+            padding: 0px var(--padding-size-mid);
+        }
+        .secondHeaderElement:hover{
+            color: var(--white-color);
+            font-weight: bold;
+        }
+        .secondHeaderElement:focus{
+            color: var(--white-color);
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: var(--gray-color);
+    >*{
+        margin:var(--padding-size-mid) var(--padding-size-small);
+        // border:solid var(--black-color) 1px;
+    }
+    .mainProfile{
+        border:none;
+        .bandName{
+            font-size: var(--font-large-size);
+            font-weight: bold;
+            padding: var(--padding-size-small) 0px;
+        }
+        .memberControl{
+            display: flex;
+            .memberCnt{
+                padding: var(--padding-size-micro) 0px var(--padding-size-micro);
+            }
+            span{padding: var(--padding-size-micro) 0px;}
+            button{
+                padding: var(--padding-size-micro);
+                color: var(--light-pink-color);
+            }
+        }
+        .caution{
+            font-size: var(--font-small-size);
+            color: var(--dark-gray-color);
+            padding: var(--padding-size-small) 0px;
+        }
+        hr{
+            width: 200px;
+            color: var(--light-gray-color);
+            margin-bottom: var(--padding-size-small);
+        }
+        button{
+            color: var(--dark-gray-color);
+            span{font-weight: lighter;}
+            span:hover{
+                text-decoration: underline;
+                text-underline-position: under;
+            }
+        }
+    }
+    .postingPage{
+        width: 35%;
+        >*{
+            margin: var(--padding-size-mid) 0px;
+            box-shadow: 1px 1px var(--light-gray-color);
+        }
+        .findPost{
+            background-color: var(--white-color);
+            margin: 0px;
+            padding: var(--padding-size-small);
+            :focus{outline: none;}
+            input{
+                width: 90%;
+                border: none;
+                color: var(--dark-gray-color);
+                font-size: var(--font-middle-size);
+                margin: 0px var(--padding-size-small);
+            }
+            button{
+                color: var(--dark-gray-color);
+            }
+        }
+        .newPost{
+            background-color: var(--white-color);
+            .makeNewPost{
+                color: var(--dark-gray-color);
+                padding-bottom: var(--padding-size-large);
+                width: 90%;
+                margin: var(--padding-size-small);
+                font-size: var(--font-middle-size);
+                text-align: left;
+            }
+            .icons{
+                *{
+                    color: var(--dark-gray-color);
+                    margin-inline: var(--padding-size-small);
+                    margin-bottom: var(--padding-size-small);
+                    font-size: 20px;
+                }
+            }
+        }
+        .postedPages{
+            background-color: var(--white-color);
+            .mainPost{
+                .header{
+                    display: flex;
+                    // 여기 해야됨!
+                }
+                .mainFile{
+                    text-align: center;
+                    background-color: violet;
+                    margin: var(--padding-size-mid);
+                    border: solid var(--dark-gray-color) 1px;
+                }
+                .view{
+                    text-align: right;
+                    i{
+                        font-size: var(--font-small-size);
+                        color: var(--dark-gray-color);
+                        margin-right: var(--padding-size-mid);
+                        margin-bottom: var(--padding-size-mid);
+                    }
+                }
+            }
+            
+
+            .action{
+                display: flex;
+                justify-content: space-around;
+                button{
+                    margin: var(--padding-size-mid) 0px;
+                    color: var(--dark-gray-color);
+                }
+                span{
+                    color: var(--black-color);
+                }
+                span:hover{
+                    text-decoration: underline;
+                    text-underline-position: under;
+                }
+            }
+        }
+    }
+    .utils{
+        >*{
+            padding: var(--padding-size-mid);
+            border:solid 1px var(--black-color);
+        }
+    }
+}
