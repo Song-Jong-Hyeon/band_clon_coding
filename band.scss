@@ -16,6 +16,7 @@
     --border-thick : 1px;
     --input-width : 240px;
     // font-size
+    --font-huge-size:36px;
     --font-large-size:24px;
     --font-middle-size:16px;
     --font-small-size:12px;
@@ -41,6 +42,8 @@ button:focus{
 }
 
 header {
+    position: sticky;
+    top: 0px;
     .firstHeader{
         display: flex;
         background-color: var(--light-pink-color);
@@ -119,12 +122,16 @@ header {
     display: flex;
     justify-content: center;
     background-color: var(--gray-color);
+    height: auto;
     >*{
         margin:var(--padding-size-mid) var(--padding-size-small);
         // border:solid var(--black-color) 1px;
     }
     .mainProfile{
         border:none;
+        position: sticky;
+        top: 103px;
+        align-self: flex-start;
         .bandName{
             font-size: var(--font-large-size);
             font-weight: bold;
@@ -202,17 +209,47 @@ header {
             }
         }
         .postedPages{
-            background-color: var(--white-color);
+            >*{
+                margin-bottom: var(--padding-size-mid);
+                background-color: var(--white-color);
+            }
             .mainPost{
                 .header{
                     display: flex;
-                    // 여기 해야됨!
+                    justify-content: space-between;
+                    .frontHeader{
+                        display: flex;
+                        margin: var(--padding-size-small);
+                        margin-top: var(--padding-size-mid);
+                        #userProfile{
+                            font-size: var(--font-huge-size);
+                            color: var(--light-gray-color);
+                        }
+                        .info{
+                            margin: 0px var(--padding-size-small);
+                            .timeRecord{
+                                color: var(--dark-gray-color);
+                                font-size: var(--font-small-size);
+                            }
+                        }
+                    }
+                    .endHeader{
+                        color: var(--light-gray-color);
+                        padding: var(--padding-size-mid);
+                        button{
+                            font-weight: lighter;
+                        }
+                    }
                 }
+                
                 .mainFile{
                     text-align: center;
-                    background-color: violet;
                     margin: var(--padding-size-mid);
                     border: solid var(--dark-gray-color) 1px;
+                    video{
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
                 .view{
                     text-align: right;
@@ -224,8 +261,7 @@ header {
                     }
                 }
             }
-            
-
+            hr{background-color: var(--light-gray-color);}
             .action{
                 display: flex;
                 justify-content: space-around;
@@ -244,6 +280,9 @@ header {
         }
     }
     .utils{
+        position: sticky;
+        top: 103px;
+        align-self: flex-start;
         >*{
             padding: var(--padding-size-mid);
             border:solid 1px var(--black-color);
