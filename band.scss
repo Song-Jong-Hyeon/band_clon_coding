@@ -79,10 +79,14 @@ header {
         }
         
         .icons{
-            // padding: var(--padding-size-small);
+            margin-right: var(--padding-size-mid);
             button{
                 color:var(--white-color);
                 padding: var(--padding-size-small);
+                font-size: var(--font-large-size);
+            }
+            .newTextFeed,.find{
+                font-size: var(--font-small-size);
             }
             button:hover{
                 background-color: var(--dark-pink-color);
@@ -284,8 +288,101 @@ header {
         top: 103px;
         align-self: flex-start;
         >*{
-            padding: var(--padding-size-mid);
-            border:solid 1px var(--black-color);
+            margin-bottom: var(--padding-size-mid);
+            background-color: var(--white-color);
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            >*{
+                padding: var(--padding-size-small) var(--padding-size-mid);
+                font-size: var(--font-middle-size);
+            }
+            .utilName{
+                font-weight: bold;
+            }
+            .utilOption{
+                color: var(--dark-gray-color);
+            }
+            .utilOption:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+        .chatting .header .utilOption{
+            color: var(--light-pink-color);
+        }
+        .chatting .utilToDo{
+            .startGroupCall{
+                text-align: center;
+                margin: var(--padding-size-small);
+                button{
+                    padding: var(--padding-size-small) var(--padding-size-large) ;
+                    background-color: var(--gray-color);
+                    border-radius: 8% / 50%;
+                    color: var(--black-color);
+                }
+            }
+            .bandinfo{
+                display: flex;
+                padding: var(--padding-size-small);
+                .imgBox{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    .img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .information{
+                    padding: 0px var(--padding-size-small);
+                    .bandName{
+                        font-weight: bold;
+                        font-size: var(--font-small-size);
+                    }
+                    .message{
+                        color: var(--dark-gray-color);
+                        font-size: var(--font-small-size);
+                    }
+                }
+            }
+            .bandinfo:hover{
+                cursor: pointer;
+                .bandName{text-decoration: underline;}
+            }   
+        }
+        .files .utilToDo{
+            padding-bottom: var(--padding-size-small) ;
+            >*{
+                display: flex;
+                margin: var(--padding-size-mid);
+                margin-bottom: var(--padding-size-mid);
+                button{
+                    color: var(--dark-pink-color);
+                    font-size: var(--font-large-size);
+                }
+                .fileText{
+                    padding: 0px var(--padding-size-small);
+                    font-size: var(--font-small-size);
+                    .fileName{
+                        font-weight: bold;
+                    }
+                    .fileName:hover, .seeOrigin:hover{
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .images .utilToDo{
+            padding: var(--padding-size-small);
+            img{
+                width: 70px;
+                height: 70px;
+            }
         }
     }
 }

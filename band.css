@@ -93,9 +93,18 @@ header .firstHeader .homeAndFindBand .findBand button {
   color: var(--light-gray-color);
 }
 
+header .firstHeader .icons {
+  margin-right: var(--padding-size-mid);
+}
+
 header .firstHeader .icons button {
   color: var(--white-color);
   padding: var(--padding-size-small);
+  font-size: var(--font-large-size);
+}
+
+header .firstHeader .icons .newTextFeed, header .firstHeader .icons .find {
+  font-size: var(--font-small-size);
 }
 
 header .firstHeader .icons button:hover {
@@ -364,7 +373,133 @@ header .secondHeader .secondHeaderElement:focus {
 }
 
 .container .utils > * {
-  padding: var(--padding-size-mid);
-  border: solid 1px var(--black-color);
+  margin-bottom: var(--padding-size-mid);
+  background-color: var(--white-color);
+}
+
+.container .utils .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .utils .header > * {
+  padding: var(--padding-size-small) var(--padding-size-mid);
+  font-size: var(--font-middle-size);
+}
+
+.container .utils .header .utilName {
+  font-weight: bold;
+}
+
+.container .utils .header .utilOption {
+  color: var(--dark-gray-color);
+}
+
+.container .utils .header .utilOption:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.container .utils .chatting .header .utilOption {
+  color: var(--light-pink-color);
+}
+
+.container .utils .chatting .utilToDo .startGroupCall {
+  text-align: center;
+  margin: var(--padding-size-small);
+}
+
+.container .utils .chatting .utilToDo .startGroupCall button {
+  padding: var(--padding-size-small) var(--padding-size-large);
+  background-color: var(--gray-color);
+  border-radius: 8% / 50%;
+  color: var(--black-color);
+}
+
+.container .utils .chatting .utilToDo .bandinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: var(--padding-size-small);
+}
+
+.container .utils .chatting .utilToDo .bandinfo .imgBox {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.container .utils .chatting .utilToDo .bandinfo .imgBox .img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .utils .chatting .utilToDo .bandinfo .information {
+  padding: 0px var(--padding-size-small);
+}
+
+.container .utils .chatting .utilToDo .bandinfo .information .bandName {
+  font-weight: bold;
+  font-size: var(--font-small-size);
+}
+
+.container .utils .chatting .utilToDo .bandinfo .information .message {
+  color: var(--dark-gray-color);
+  font-size: var(--font-small-size);
+}
+
+.container .utils .chatting .utilToDo .bandinfo:hover {
+  cursor: pointer;
+}
+
+.container .utils .chatting .utilToDo .bandinfo:hover .bandName {
+  text-decoration: underline;
+}
+
+.container .utils .files .utilToDo {
+  padding-bottom: var(--padding-size-small);
+}
+
+.container .utils .files .utilToDo > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: var(--padding-size-mid);
+  margin-bottom: var(--padding-size-mid);
+}
+
+.container .utils .files .utilToDo > * button {
+  color: var(--dark-pink-color);
+  font-size: var(--font-large-size);
+}
+
+.container .utils .files .utilToDo > * .fileText {
+  padding: 0px var(--padding-size-small);
+  font-size: var(--font-small-size);
+}
+
+.container .utils .files .utilToDo > * .fileText .fileName {
+  font-weight: bold;
+}
+
+.container .utils .files .utilToDo > * .fileText .fileName:hover, .container .utils .files .utilToDo > * .fileText .seeOrigin:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.container .utils .images .utilToDo {
+  padding: var(--padding-size-small);
+}
+
+.container .utils .images .utilToDo img {
+  width: 70px;
+  height: 70px;
 }
 /*# sourceMappingURL=band.css.map */
