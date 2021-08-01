@@ -17,7 +17,7 @@
     --input-width : 240px;
     // font-size
     --font-huge-size:36px;
-    --font-large-size:24px;
+    --font-large-size:20px;
     --font-middle-size:16px;
     --font-small-size:12px;
 }
@@ -55,10 +55,12 @@ header {
             justify-content: space-around;
             .home{
                 border : solid var(--white-color);
-                padding : 0px var(--padding-size-small);
+                padding : 0 var(--padding-size-small);
                 border-radius: 20% / 50%;
                 font-size: var(--font-large-size);
                 color : var(--white-color);
+                font-family: 'Jua', sans-serif;
+                margin: auto;
             }
             .findBand{
                 border : solid var(--border-thick) var(--dark-pink-color);
@@ -66,7 +68,8 @@ header {
                 background-color: var(--dark-pink-color);
                 :focus{outline:none;}
                 .finder{
-                    margin: var(--padding-size-small);
+                    font-size: var(--font-small-size);
+                    margin: 0px var(--padding-size-small);
                     width: var(--input-width);
                     border:none;
                     color : var(--light-gray-color);
